@@ -38,5 +38,9 @@ public class Funcionario {
     @JoinColumn(name = "supervisor_cpf")
     private Funcionario supervisor;
 
+    //Dependente
+    @OneToMany(mappedBy = "funcionario")
+    private List<Dependente> dependentes;
+    
 
 }
