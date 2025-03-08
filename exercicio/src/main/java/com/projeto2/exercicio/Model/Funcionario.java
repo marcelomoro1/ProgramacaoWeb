@@ -31,6 +31,7 @@ public class Funcionario {
     @Column(nullable = false)
     private String endereco;
 
+    //Supervisor
     @OneToMany(mappedBy = "supervisor", cascade = CascadeType.ALL)//1 supervisor pode ter muitos supervisionados
     private List<Funcionario> supervisionados;
 

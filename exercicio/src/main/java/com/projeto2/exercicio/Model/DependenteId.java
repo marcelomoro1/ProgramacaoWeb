@@ -7,7 +7,7 @@ import java.io.Serializable;
 @Embeddable
 public class DependenteId implements Serializable {
 
-    private String fcpf;
+    private String funcionario_cpf;
     private String nome_dependente;
 
 }
