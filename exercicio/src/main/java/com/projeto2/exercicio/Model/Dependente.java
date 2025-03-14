@@ -16,7 +16,7 @@ public class Dependente {
 
     //Relação Funcionario_dependente
     @ManyToOne //Relaciona com a classe Funcionario
-    @MapsId("funcionario_cpf") //preenche a funcionario_id da dependenteId
+    @MapsId("funcionario_cpf") //preenche a funcionario_cpf da dependenteId
     @JoinColumn(name = "fcpf", nullable = false) //nome da chave estrangeira
     private Funcionario funcionario;
 }

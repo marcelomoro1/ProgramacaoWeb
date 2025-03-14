@@ -25,9 +25,6 @@ public class Funcionario {
     @Column(columnDefinition = "CHAR(1)", nullable = false)
     private String sexo;
 
-    @Column(columnDefinition = "CHAR(11)")
-    private String supervisor_cpf;
-
     @Column(nullable = false)
     private String endereco;
 
@@ -42,6 +39,17 @@ public class Funcionario {
     //Dependente
     @OneToMany(mappedBy = "funcionario")
     private List<Dependente> dependentes;
-    
 
+    //relacao funcionario - departamento
+    @ManyToOne
+    @JoinColumn(name = "Dnumero")
+    private Departamento departamento;
+
+    //relacao gerencia entre funcionario - departamento
+    @OneToOne(mappedBy = "gerente")
+    private Departamento dept_gerente;
+
+    //relacao funcionario - trabalhaem
+    @OneToMany(mappedBy = "trabalhaem_funcionario")
+    private List<TrabalhaEm> funcionario_trabalhaem;
 }
