@@ -8,5 +8,5 @@ import java.io.Serializable;
 public class LocalizacoesId implements Serializable {
     
     private String dlocal;
-    private String Dnumero;
+    private int Dnumero;
 }
