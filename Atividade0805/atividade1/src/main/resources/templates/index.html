@@ -11,19 +11,19 @@
 
     <h1>Curriculo</h1>
 
-    <div class="container-img">
+    <div id="topo" class="container-img">
         <a href="https://br.linkedin.com/in/marcelomoro1" target="_blank"> <img class="imagem" src="/img/101741773.jpg" alt="Foto de perfil" height="150px" title="dsds"></a>
     </div>
 
     <h1>Marcelo Moro</h1>
-    <h2>Desenvolvedor</h2>
+    <h2 class="titulo_secundario" >Desenvolvedor</h2>
 
     <div class="container-p">
-        <p>Sistema de informação 5º semestre, período noturno<br> desenvolvedor fullstack com preferência pelo backend </p>
+        <p class="destaque">Sistema de informação 5º semestre, período noturno<br> desenvolvedor fullstack com preferência pelo backend </p>
     </div>
 
 
-    <h2>Habilidades</h2>
+    <h2 class="titulo_secundario" >Habilidades</h2>
     <ul>
         <li>Java</li>
         <li>Spring Boot</li>
@@ -53,10 +53,10 @@
         </tr>
     </table>
 
-    <h2>Projetos</h2>
+    <h2 class="titulo_secundario" >Projetos</h2>
 
     <div class="container-p">
-        <p>  Sistema de gerenciamento de vendas, projeto web <br>desenvolvido em Java com Spring Boot<br>
+        <p class="destaque">  Sistema de gerenciamento de vendas, projeto web <br>desenvolvido em Java com Spring Boot<br>
             com o foco em gerenciar compras e vendas de </p>
     </div>
 
@@ -66,8 +66,42 @@
 
     <div class="container-btn">
         <button  class="btn" onclick="document.location='https://www.google.com'">Google</button>
+    </div><br>
+
+    <form action="" method="post">
+        <label>Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Nome" required> <br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="email@email.com" required><br><br>
+
+        <label for="curso">Cursos de Interesse:</label>
+        <select id="curso" name="curso">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+        </select><br><br>
+
+        <label>Gênero</label>
+        <input type="radio" id="masc" name="genero" value="masculino">
+        <label for="masc">Masculino</label>
+        <input type="radio" id="fem" name="genero" value="feminino">
+        <label for="fem">Feminino</label><br><br>
+
+        <label>Interesses</label>
+        <input type="checkbox" id="html" name="interesses" value="HTML">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="interesses" value="CSS">
+        <label for="css">CSS</label><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="40"></textarea><br><br>
+
+        <input class="btn"  type="submit" value="Enviar">
+    </form>
+
+    <div class="container-btn">
+        <a href="#topo"><i class="fas fa-caret-up"></i></a>
     </div>
-
-
 </body>
 </html>

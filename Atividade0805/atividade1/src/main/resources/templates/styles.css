@@ -1,3 +1,7 @@
+body{
+    background: linear-gradient(135deg, #f3ffea, #c4fb8d, #b9ff3f, #73ff00);
+
+}
 *{
     font-family: "Cascadia Code";
 }
@@ -5,10 +9,18 @@
 h1{
     text-align: center;
 }
-h2{
+.titulo_secundario{
     color: red;
     text-align: center;
 }
+
+.destaque{
+    font-style: oblique;
+    border-style: dashed;
+    border-radius: 50%;
+    padding: 2.5rem;
+}
+
 ul{
     display: flex;
     flex-direction: column;
@@ -76,4 +88,8 @@ ul {
 }
 #anos{
     color: red;
+}
+.fas, fa-caret-up{
+    font-size: 2rem;
+    color: black;
 }
